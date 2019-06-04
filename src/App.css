@@ -1,33 +1,67 @@
-.App {
-  text-align: center;
+html {
+  font-size: 62.5%;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-size: 1.6rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  background: linear-gradient(45deg, #D1FFF0, #FFF0E6 99%);
+  box-sizing: border-box;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+/* // Painéis */
+
+.edit {
+  box-sizing: border-box;
+  margin-left: 5vw;
+  min-width: 50%; 
+  max-width: 50%; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.previwer {
+  box-sizing: border-box;
+  box-shadow: 3px black;
+  margin-right: 100px;
+  min-width: 50%; 
+  max-width: 50%; 
+}
+
+/* // Editores */
+
+#editor {
+  border: 1px solid lightgrey;
+  font-size: 1.6rem;
+  padding-top: 15px;
+  resize: none;
+}
+
+#preview {
+  background-color: white;
+  border: 1px solid lightgrey;
+  margin: 0;
+  overflow: scroll;
+  overflow-wrap: break-word;
+}
+
+#editor, #preview {
+  box-sizing: border-box;
+  box-shadow: 2px 1px 10px grey;
+  font-family: 'PT Serif', serif;
+  height: 80vh;
+  min-width: 40vw; 
+  max-width: 40vw;
+  padding-left: 10px;
+  padding-right: 5px;
+  outline: none;
+}
+
+ h2 {
+  font-family: 'Raleway', serif;
+  letter-spacing: 1px;
 }
